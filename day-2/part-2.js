@@ -7,6 +7,7 @@ inputs.arr.forEach((input) => {
   const { groups } =
     /^(?<from>\d+)-(?<to>\d+) (?<char>.): (?<password>.*)$/.exec(input);
 
+  // if either index has the character but not both index
   if (
     (groups.password[groups.from - 1] === groups.char ||
       groups.password[groups.to - 1] === groups.char) &&
