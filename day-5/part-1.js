@@ -21,7 +21,7 @@ const getId = () => {
       LR.push(i);
     }
     // ↑ you have to create these index arrays IN the loop
-    // as the indexs would be "used up" when they are in global
+    // as the indexs would be "used up" when they are global
     for (let pass of passes) {
       if (pass === "F") {
         FB.splice(FB.length / 2);
